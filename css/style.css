@@ -1,0 +1,78 @@
+*
+{
+   -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+
+}
+
+body
+{
+    margin:0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loaderX
+{
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-top: 3px solid red;
+    border-right:3px solid transparent;
+    border-radius: 50%;
+    animation:spinnerX 0.5s linear infinite;
+}
+
+@keyframes spinnerX 
+{
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* slide-show */
+#slideShow
+{
+    height: 80vh;
+    width: 80%;
+    background-image: url('../assets/cS-1.jpg');
+    background-size: cover;
+    background-position: center;
+    display:none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#slideShow a
+{
+    font-size: 2em;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    cursor: pointer;
+}
+
+#next
+{
+    padding-right: 30px;
+}
+
+#next:hover
+{
+    padding-right: 10px;
+    padding-left: 20px;
+}
+
+#prev
+{
+    padding-left: 30px;
+}
+
+#prev:hover
+{
+    padding-left: 10px;
+    padding-right: 20px;
+}
